@@ -122,6 +122,7 @@ func main() {
 	if len(missingImportPaths) > 0 {
 		fatal("Missing import paths:\n%s\n", join(missingImportPaths, "\n"))
 	}
+	fmt.Print("All import paths covered by Gopkg.toml")
 }
 
 func numParts(importPath string) int {
